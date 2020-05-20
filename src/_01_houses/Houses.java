@@ -11,31 +11,32 @@ public class Houses {
 robot.setX(25);
 robot.setY(500);
 
-for (int i = 0; i < 2; i++) {
-	building(20);
-	building(40);
-	building(80);
-	building(30);
-	building(90);
-	building(10);
-	building(50);
-	building(70);
-	building(10);
+for (int i = 0; i < 3; i++) {
+	building("small");
+	building("large");
+	building("medium");
+
 }
 
 	}
 	public void building(String height) {
 		int Height = 120;
 		if (height.equals("small")) {
-			
+			Height = 60;
+		}
+		else if (height.equals("medium")) {
+			Height = 120;
+		}
+		else if (height.equals("large")) {
+			Height = 250;
 		}
 		robot.setSpeed(100);
 		robot.penDown();
-		robot.move(height);
+		robot.move(Height);
 		robot.turn(90);
 		robot.move(25);
 		robot.turn(90);
-		robot.move(height);
+		robot.move(Height);
 		robot.turn(-90);
 		robot.setPenColor(0,255,0);
 		robot.move(20);
