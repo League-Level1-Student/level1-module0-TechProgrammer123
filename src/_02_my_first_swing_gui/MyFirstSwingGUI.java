@@ -31,17 +31,17 @@ JLabel FirstSwing2 = new JLabel();
 		// 7. Set the text of the JLabel to a lovely greeting.
 FirstSwing2.setText("Hello, how are you doing today?");
 		// 8. Add the JPanel object to the JFrame
-
+FirstSwing.add(FirstSwing1);
 		// 9. Add the JLabel object to the JPanel
-
+FirstSwing1.add(FirstSwing2);
 		// 10. Pack your JFrame.
-
+FirstSwing.pack();
 		// 11. Run your program again. Do you see your message.
-
+//yes
 		// 12. Use the loadImage method to set the icon of the JLabel object.
-
+FirstSwing2.setIcon(loadImage());
 		// 13. Re-pack the JFrame object.
-
+FirstSwing.pack();
 		// 14. Run the program one more time. Do you see the image?
 
 	}
