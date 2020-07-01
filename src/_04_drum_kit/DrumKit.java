@@ -42,7 +42,7 @@ frame.add(panel);
 		// Eclipse project under "default package".
 
 		// 8. Put the name of your image file in a String variable.
-
+String drum = "EVO622BKSi-large.jpg";
 		// 9. Edit the next line to use your String variable
 		// drumLabelWithImage = createLabelImage(drumImageString);
 
