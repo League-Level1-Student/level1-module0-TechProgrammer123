@@ -71,12 +71,12 @@ String snare = "";
 		// 15. Download a drum sound and drop it into your "default package".
 		// You can find it on freesound.org. To download it, log in as
 		// leagueofamazing/code4life.
-
+playSound("486306__kendallbear__playdead173.wav");
 		// 16. If they clicked on the drumImage...
 
 		// 17. ...use the playSound method to play a drum sound. Test to see if
 		// it works
-
+//it works
 	}
 
 	private JLabel createLabelImage(String fileName) throws MalformedURLException {
