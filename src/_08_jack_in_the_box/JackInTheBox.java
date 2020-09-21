@@ -72,7 +72,10 @@ private void playSound(String soundFile) {
 @Override
 public void actionPerformed(ActionEvent arg0) {
 	// TODO Auto-generated method stub
-	
+	actionPerformed+=1;
+if (actionPerformed == 5) {
+	showPicture("jackInTheBox.png");
 }
-
+}
+int actionPerformed = 0;
 }
