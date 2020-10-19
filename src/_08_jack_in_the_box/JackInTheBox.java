@@ -75,6 +75,9 @@ public void actionPerformed(ActionEvent arg0) {
 	actionPerformed+=1;
 if (actionPerformed == 5) {
 	showPicture("jackInTheBox.png");
+
+		playSound("homer-woohoo.wav");
+	
 }
 }
 int actionPerformed = 0;
