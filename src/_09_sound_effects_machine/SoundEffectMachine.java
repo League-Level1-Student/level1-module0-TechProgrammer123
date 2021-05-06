@@ -43,7 +43,7 @@ public void actionPerformed(ActionEvent e) {
 		playSound("homer-woohoo.wav");
 	}
 	if (e.getSource() == button3) {
-		playSound("");
+		playSound("cymbal.wav");
 	}
 }
 private void playSound(String soundFile) {
