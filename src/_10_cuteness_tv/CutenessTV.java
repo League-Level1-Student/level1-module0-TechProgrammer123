@@ -1,15 +1,33 @@
 package _10_cuteness_tv;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.net.URI;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
-public class CutenessTV {
-	JButton Ducks = new JButton();
-	JButton Frog = new JButton();
-	JButton FluffyUnicorns = new JButton();
-	JFrame frame = new JFrame();
+public class CutenessTV implements ActionListener {
+	JButton button1 = new JButton("Ducks");
+	JButton button2 = new JButton("Frog");
+	JButton button3 = new JButton("FluffyUnicorns");
+	
+	void setup() {
+		JFrame frame = new JFrame();
+		frame.setVisible(true);
+		 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		 JPanel panel = new JPanel();
+		 
+		 frame.add(panel);
+		 panel.add(button1);
+		 panel.add(button2);
+		 panel.add(button3);
+		 frame.pack();
+		 button1.addActionListener(this);
+		 button2.addActionListener(this);
+		 button3.addActionListener(this);
+}
 	void showDucks() {
 	      playVideo("https://www.youtube.com/watch?v=MtN1YnoL46Q");
 	 }
@@ -38,5 +56,10 @@ public class CutenessTV {
 	      }      } catch (Exception e) {
 	           e.printStackTrace();
 	      }
+	}
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 }
