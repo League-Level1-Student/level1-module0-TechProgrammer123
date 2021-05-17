@@ -60,6 +60,17 @@ public class CutenessTV implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
+		if( e.getSource()==button1) {
+			showDucks();
+		}
+		if( e.getSource()==button2) {
+			showFrog();
+		}
+		if( e.getSource()==button3) {
+			showFluffyUnicorns();
+		}
+			
 		
+		}
 	}
-}
+
